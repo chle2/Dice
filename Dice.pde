@@ -33,8 +33,8 @@ class Die //draws one die
   void show()
   {
     //die background
-    fill(((int)(Math.random()*255)),((int)(Math.random()*255)),((int)(Math.random()*255)));
-    rect(dieX, dieY,49,49);
+    fill(((int)(Math.random()*100)),((int)(Math.random()*100)),((int)(Math.random()*100)));
+    rect(dieX, dieY,45,45);
   }
   void roll()
   {
