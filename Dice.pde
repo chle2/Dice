@@ -18,6 +18,28 @@ void draw()
     }
   }
 }
+void setup()
+ {
+   size(600,700);
+   noLoop();
+   background(#00FFFF);
+ }
+ void draw()
+ {
+   //changes background every click
+   background(#A9A9A9);
+   //rows and columns
+   for(int x = 0; x < 601; x = x + 55)
+   {
+     for(int y = 0; y < 601; y = y + 55)
+     {
+       //creates new die from class Die
+       Die bob = new Die(x,y);
+       bob.show();
+       bob.roll();
+     }
+   }
+ }
 void mousePressed()
 {
   redraw(); 
