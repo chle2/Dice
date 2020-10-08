@@ -2,11 +2,11 @@ void setup()
 {
   size(300,300);
   noLoop();
-  background(#00FFFF);
+  background(0);
 }
 void draw()
 {
-  background(0);
+  background(255,255,255);
   for(int x = 0; x < 301; x = x + 50)
   {
     for(int y = 0; y < 301; y = y + 50)
@@ -33,7 +33,7 @@ class Die //draws one die
   void show()
   {
     //die background
-    fill(((int)(Math.random()*100)),((int)(Math.random()*100)),((int)(Math.random()*100)));
+    fill(((int)(Math.random()*225)),((int)(Math.random()*225)),((int)(Math.random()*225)));
     rect(dieX, dieY,45,45,5);
   }
   void roll()
