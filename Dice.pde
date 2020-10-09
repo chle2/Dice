@@ -22,6 +22,20 @@ void mousePressed()
 {
   redraw(); 
 }
+void draw()
+{
+  background(255,255,255);
+  for(int x = 0; x < 301; x = x + 50)
+  {
+    for(int y = 0; y < 301; y = y + 50)
+    {
+      //creates new die from class Die
+      Die bob = new Die(x,y);
+      bob.show();
+      bob.roll();
+    }
+  }
+}
 class Die //draws one die
 {
   int dieX,dieY,dieRoll;
